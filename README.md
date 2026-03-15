@@ -1,4 +1,4 @@
-# Multimodal PDF RAG System (Simplified)
+# Multimodal PDF RAG System 
 
 This project keeps the full RAG flow but with a minimal, interview-friendly structure.
 
