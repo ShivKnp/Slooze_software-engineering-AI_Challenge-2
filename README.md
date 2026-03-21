@@ -1,4 +1,4 @@
-# PDF RAG System (Interview Ready)
+# PDF RAG System 
 
 Simple, professional basic RAG project with a compact structure.
 
@@ -7,7 +7,7 @@ Simple, professional basic RAG project with a compact structure.
 1. Accept a PDF file as input
 2. Extract text from the PDF (Unstructured->fast(text),hi_res(tables,headings,etc.)->ocr(image))
 3. Split text into chunks (fast rolling chunks by default)
-4. Generate embeddings for chunks (SentenceTransformers)
+4. Generate embeddings for chunks (SentenceTransformers - Ollama)
 5. Store embeddings in Chroma
 6. Retrieve top relevant chunks for a user question
 7. Send retrieved context to local Ollama model and generate grounded answer (active PDF only)
