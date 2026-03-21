@@ -33,17 +33,19 @@ multimodal_pdf_rag_system/
    pip install -r requirements.txt
 
 2. Add `.env` in project root
+   ```
    OLLAMA_MODEL=llama3:latest
    EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
    RETRIEVAL_TOP_K=3
    PDF_PARSE_STRATEGY=fast
    USE_TITLE_CHUNKING=false
+   ```
 
    # Optional backward compatibility aliases
    # LLM_MODEL=llama3:latest
    # GEMINI_MODEL=llama3:latest
 
-3. Start CLI
+4. Start CLI
    python main.py
 
 ## Notes
