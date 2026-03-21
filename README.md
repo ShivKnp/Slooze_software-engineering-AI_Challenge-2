@@ -13,7 +13,7 @@ Simple, professional basic RAG project with a compact structure.
 7. Send retrieved context to local Ollama model and generate grounded answer (active PDF only)
 
 ## Clean Structure
-
+```
 multimodal_pdf_rag_system/
   main.py
   rag/
@@ -26,7 +26,7 @@ multimodal_pdf_rag_system/
   vector_storage/chroma_db/
   requirements.txt
   README.md
-
+```
 ## Run
 
 1. Install dependencies
@@ -42,8 +42,10 @@ multimodal_pdf_rag_system/
    ```
 
    # Optional backward compatibility aliases
+   ```
    # LLM_MODEL=llama3:latest
    # GEMINI_MODEL=llama3:latest
+   ```
 
 4. Start CLI
    python main.py
@@ -51,7 +53,7 @@ multimodal_pdf_rag_system/
 ## Notes
 
 - Entering PDF path supports plain path, quoted path, and PowerShell-style input like:
-   & 'c:\Users\name\Downloads\file.pdf'
+   & ```'c:\Users\name\Downloads\file.pdf'```
 - Use `change pdf` / `switch pdf` in the CLI to change the active PDF mid-conversation.
 - Retrieval and summary are scoped to the active PDF, which prevents unrelated cross-document answers.
 - Parser has automatic fallback (`fast`, `hi_res`, `ocr_only`) if initial extraction returns no text.
